@@ -499,9 +499,9 @@ window.addEventListener('scroll', function() {
    
   globe.style.transform = "rotate(" + window.pageYOffset/25 + "deg)";
 
-  bfly1.style.left = 116 + scrollPercent*window.innerWidth * 0.1 + 'px';
-  bfly2.style.left = 945 - scrollPercent*window.innerWidth * 0.1 + 'px';
-  bfly3.style.left = 554 - scrollPercent*window.innerWidth * 0.3 + 'px';
+  bfly1.style.left = (window.innerWidth < 1366 ? 0 : 116) + scrollPercent*window.innerWidth * 0.1 + 'px';
+  bfly2.style.left = (window.innerWidth < 1366 ? 170 : 945) - scrollPercent*window.innerWidth * 0.1 + 'px';
+  bfly3.style.left = (window.innerWidth < 1366 ? 100 : 554) - scrollPercent*window.innerWidth * 0.3 + 'px';
 });
 	</script>
 </body>
