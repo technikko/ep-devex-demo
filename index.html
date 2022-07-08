@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<!--[if lte 8]><html class="pre-ie9" lang="en"><![endif]-->
+<!--[if gte IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<title>The Green Leaf</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="description" content="" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="loader.css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="icon" href="img/favicon.png">
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="" />
+<meta name="twitter:card" content="">
+<meta name="twitter:site" content="">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="">
+</head>
+
+<style>
+@media only screen and (min-width : 375px) {
+    #partnerCarousel{
+        display: block;
+    }    
+    #partnerImages{
+        display: none;
+    }
+
+#leaf-globe-section {
+    height: 447px;
+}
+#leaf-globe-wapper {
+    width: 375px;
+    height: 447px;
+}
+#leaf-globe-section-gradient {
+    top: -447px;
+}
+#leaf-globe {
+    height: 310.34px;
+    width: 325.22px;
+    left: 24px;
+    top: 32px;
+}
+#leaf-butterfly-1 {
+    left: 21.81px;
+    top: 24.3px;
+    width: 68.2px;
+    height: 53.77px;
+}
+#leaf-butterfly-2 {
+    
+	left: 214.58px;
+    top: 22.09px;
+    width: 67.94px;
+    height: 54.35px;
+}
+#leaf-butterfly-3 {
+    top: 147px;
+    left: 112px;
+    height: 134px;
+    width: 125px;
+}
+#leaf-bg-1 {
+    left: -165.43px;
+    top: -272.59px;
+    width: 437.69px;
+    height: 312.79px;
+}
+#leaf-bg-2 {
+    top: -542.45px;
+    left: 165.45px;
+    height: 312px;
+    width: 437px;
+}
+section.single-column {
+	padding: 24px 32px;
+}	
+	section > p, div.carousel-inner p {
+		max-width: 300px;
+	}
+	section.double-column {
+		width: 100%;
+  		flex-direction: column;
+	}
+	section.double-column.reversed {
+  		flex-direction: column-reverse;
+	}
+	section.double-column .column-item{
+		height: 500px;
+		padding: 32px;
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width : 1440px) {
+    #partnerCarousel{
+        display: none;
+    }    
+    #partnerImages{
+        display: block;
+    }
+#leaf-globe-section {
+    height: 800px;
+}
+#leaf-globe-wapper {
+    left: 0;
+    width: 1440px;
+    height: 800px;
+}
+#leaf-globe {
+    top: 0;
+    height: 720px;
+    width: 756px;
+    left: 338px;
+}
+#leaf-butterfly-1 {
+    left: 116px;
+    height: 160px;
+    width: 200px;
+}
+#leaf-butterfly-2 {
+    left: 945px;
+    height: 160px;
+    width: 200px;
+}
+#leaf-butterfly-3 {
+    top: 347px;
+    left: 554px;
+    height: 307px;
+    width: 301px;
+}
+#leaf-butterfly-2 {
+    top: 110px;
+    left: 945px;
+    height: 160px;
+    width: 200px;
+}
+#leaf-bg-1 {
+    top: -720px;
+    left: 126.59px;
+    width: 1015.44px;
+    height: 725.68px;
+}
+#leaf-bg-2 {
+    top: -1372.45px;
+    left: 604px;
+    height: 758px;
+    width: 982px;
+}
+#leaf-globe-section-gradient {
+    top: -800px;
+}
+section.single-column {
+	padding: 56px 116px;
+}
+	section > p, div.carousel-inner p {
+		max-width: 800px;
+	}
+	section.double-column {
+		width: 100%;
+  		flex-direction: row;
+	}
+	section.double-column.reversed {
+  		flex-direction: row;
+	}
+	section.double-column .column-item{
+		width: 50%;
+		height: 500px;
+		padding: 110px;
+	}
+}
+#leaf-globe-section {
+    width: calc(100vw-7px);
+    overflow: hidden;
+    background-color: #F5FEFF;
+}
+#leaf-globe-wapper {
+    position: relative;
+    left: 0;
+    margin: 0 auto;
+}
+#leaf-globe-section-gradient {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 1495px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 24.09%, #9DF7FC 100%);
+    opacity: 0.2;
+    display: block;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+#leaf-globe {
+    position: relative;
+    z-index: 3;
+    background-image: url("images/home/leaf_globe.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#leaf-butterfly-1 {
+    float: left;
+    position: relative;
+    z-index: 1;
+    background-image: url("images/home/butterfly1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#leaf-butterfly-2 {
+    float: left;
+    position: relative;
+    z-index: 2;
+    background-image: url("images/home/butterfly1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#leaf-butterfly-3 {
+    float: left;
+    position: relative;
+    z-index: 4;
+    background-image: url("images/home/butterfly3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#leaf-bg-1 {
+    float: left;
+    position: relative;
+    background-image: url("images/home/leaf_bg1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#leaf-bg-2 {
+    float: left;
+    position: relative;
+    background-image: url("images/home/leaf_bg2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+	
+section.single-column {
+	background: #f0fdff; 
+}
+#headlineCarousel > div.carousel-indicators > button, #partnerCarousel > div.carousel-indicators > button {
+    height: 4px;
+    width: 32px;
+    background-color: #c9c9c9;
+    /* border-radius: 12px; */
+}
+    #partnerCarousel .carousel-inner {
+        height: 180px;
+    }
+    #partnerCarousel .partner-img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: auto;
+        height: 98px;
+    }
+</style>
+<body>
+<div id="fadein"></div>
+<div id="loader-wrapper">
+  <div class="loader"></div>
+</div>
+<div id="layout-wrapper">
+  <div id="page-topbar" class="transparent">
+    <nav id="page-topbar-navbar" class="navbar navbar-expand-lg">
+      <div id="page-topbar-navbar-wrapper"  class="container-fluid">
+        <button class="navbar-toggler border-0" type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#page-topbar-menu" 
+                        aria-controls="nav-bar-nav" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <a id="page-topbar-logo-wrapper" class="navbar-brand" href="#">
+        <div id="page-topbar-logo">
+          <div class="logo"></div>
+        </div>
+        </a>
+        <div id="page-topbar-menu"  class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item"> <a class="nav-link" href="about.html">About Us</a><hr/></li>
+            <li class="nav-item"> <a class="nav-link"  href="advocacy.html">Our Advocacy</a> <hr/></li>
+            <li class="nav-item"> <a class="nav-link" href="contact.html">Get In Touch</a> <hr/></li>
+          </ul>
+          <div id="page-topbar-socials" class="text-center"> <a href="#" class="text-black me-2"><i class="fa-brands fa-twitter"></i></a> <a href="#" class="text-black me-2"><i class="fa-brands fa-facebook-square"></i></a> <a href="#" class="text-black me-2"><i class="fa-brands fa-instagram"></i></a> </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div id="main-content">
+    <section id="leaf-globe-section">
+      <div id="leaf-globe-wapper">
+        <div id="leaf-butterfly-1"></div>
+        <div id="leaf-butterfly-2"></div>
+        <div id="leaf-butterfly-3"></div>
+        <div id="leaf-globe"></div>
+        <div id="leaf-bg-1"></div>
+        <div id="leaf-bg-2"></div>
+      </div>
+      <div id="leaf-globe-section-gradient"></div>
+    </section>
+    <section class="single-column d-flex flex-column justify-content-center text-center">
+        <div id="headlineCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#headlineCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#headlineCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#headlineCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">                           
+              <p class="lead align-middle mx-auto"> Help us give more Filipino families a decent home, bigger opportunities, and a better chance at life. </p>
+              <p class="align-middle mx-auto mb-4"> Habitat for Humanity Philippines, by building strength, stability, and self-reliance through shelter, aims to strengthen its vision of a world where everyone has a decent place to live. With over 140,000 families being served by our ministry, you can help us continue our mission of putting God’s love into action by bringing people together to build homes, communities, and hope.</p>
+              <div style="margin-bottom: 56px">
+                <a class="btn btn-md btn-outline-primary"> Learn More </a>
+              </div>   
+                
+            </div>
+            <div class="carousel-item">
+                           
+              <p class="lead align-middle mx-auto"> Help us give more Filipino families a decent home, bigger opportunities, and a better chance at life. </p>
+              <p class="align-middle mx-auto mb-4"> Habitat for Humanity Philippines, by building strength, stability, and self-reliance through shelter, aims to strengthen its vision of a world where everyone has a decent place to live. With over 140,000 families being served by our ministry, you can help us continue our mission of putting God’s love into action by bringing people together to build homes, communities, and hope.</p>
+              <div style="margin-bottom: 56px">
+                <a class="btn btn-md btn-outline-primary"> Learn More </a>
+              </div>   
+                
+            </div>
+            <div class="carousel-item">
+                           
+              <p class="lead align-middle mx-auto"> Help us give more Filipino families a decent home, bigger opportunities, and a better chance at life. </p>
+              <p class="align-middle mx-auto mb-4"> Habitat for Humanity Philippines, by building strength, stability, and self-reliance through shelter, aims to strengthen its vision of a world where everyone has a decent place to live. With over 140,000 families being served by our ministry, you can help us continue our mission of putting God’s love into action by bringing people together to build homes, communities, and hope.</p>
+              <div style="margin-bottom: 56px">
+                <a class="btn btn-md btn-outline-primary"> Learn More </a>
+              </div>   
+                
+            </div>
+              
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#headlineCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#headlineCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </section>
+    <section class="double-column d-flex">
+      <div class="column-item" style="
+									background-color:#000; 
+									background-image: url(images/home/buildwithus.png); 
+									background-position: center;
+									background-repeat: no-repeat;
+									background-size: cover;"> </div>
+      <div class="column-item d-flex flex-column justify-content-between">
+        <div class="mx-auto" style="max-width: 500px; text-align: start;">
+          <p class="lead mb-4" style="text-align: start;"> Build With Us </p>
+          <p class="pb-2"> DONATE NOW to support the housing ministry and its projects.</p>
+          <p class="pb-2">&nbsp;VOLUNTEER to help build strength, stability, sustainability, and self-reliance through shelter.</p>
+          <p class="pb-2">PARTNER with us in uplifting the lives of families through housing and community development </p>
+        </div>
+        <div style="text-align: end">
+          <a class="btn btn-link float-right">Start Building&nbsp; <i class="fa-solid fa-chevron-right"></i> </a>
+        </div>
+      </div>
+    </section>
+    <section class="double-column d-flex reversed">
+      <div class="column-item d-flex flex-column justify-content-between">
+        <div class="mx-auto" style="max-width: 500px; text-align: start;">
+          <p class="lead mb-4" style="text-align: start;"> Unexpected Blessings </p>
+          <p class="pb-2"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div style="text-align: end">
+          <a class="btn btn-link float-right">READ MORE&nbsp; <i class="fa-solid fa-chevron-right"></i> </a>
+        </div>
+      </div>
+      <div class="column-item" style="
+									background-color:#000; 
+									background-image: url(images/home/unexpected_blessings.png); 
+									background-position: center;
+									background-repeat: no-repeat;
+									background-size: cover;"> </div>
+    </section>
+    <section class="double-column d-flex">
+      <div class="column-item" style="
+									background-color:#000; 
+									background-image: url(images/home/story_motivated.png); 
+									background-position: center;
+									background-repeat: no-repeat;
+									background-size: cover;"> </div>
+      <div class="column-item d-flex flex-column justify-content-between">
+        <div class="mx-auto" style="max-width: 500px; text-align: start;">
+          <p class="lead mb-4" style="text-align: start;"> Story: Motivated By a Dream </p>
+          <p class="pb-2"> Shirley and Felisa have a dream: they want a new house and a better life for their families. The Habitat Hypar house is a symbol of that dream. And they are hoping, even working – towards it becoming a reality.</p>
+        </div>
+        <div style="text-align: end">
+          <button class="btn btn-link float-right">READ MORE&nbsp; <i class="fa-solid fa-chevron-right"></i> </button>
+        </div>
+      </div>
+    </section>
+    <section class="single-column d-flex flex-column justify-content-center text-center">
+      <p class="lead p-3 align-middle mx-auto" style="max-width: 800px;"> Our Partners </p>
+      <p class="align-middle mx-auto" style="max-width:800px; margin-bottom: 56px;"> Various individuals and groups have helped pave the way to strengthen communities, build safer and decent homes, and transform the lives of families living in them.</p>
+        
+        <div id="partnerCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#partnerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#partnerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#partnerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#partnerCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#partnerCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">    
+                <div class="partner-img" style="background-image:url(images/home/c1.png)"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="partner-img" style="background-image:url(images/home/c2.png)"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="partner-img" style="background-image:url(images/home/c3.png)"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="partner-img" style="background-image:url(images/home/c4.png)"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="partner-img" style="background-image:url(images/home/c5.png)"></div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#partnerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#partnerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      <img id="partnerImages" class="mx-auto" 
+			   src="images/home/partners.png" 
+			   style="width:730px; 
+					  margin-bottom:56px;" alt=""/>
+      <div style="margin-bottom: 56px;" >
+        <button class="btn btn-md btn-outline-dark">View More</button>
+      </div>
+    </section>
+  </div>
+  <div id="page-bottombar" style="background-color: #D0F1F4; padding: 56px 36px;" class="d-flex flex-sm-column flex-md-row justify-content-between align-items-center">
+    <div id="page-bottombar-logo-wrapper" class="navbar-brand" href="#">
+      <div id="page-bottombar-logo">
+        <div class="logo"></div>
+      </div>
+    </div>
+    <div class="p4 d-inline-block d-flex flex-row"> <a href="#" class="text-secondary me-4" style="text-decoration: none;">Terms of Use</a> <a href="#" class="text-secondary me-4" style="text-decoration: none;">Privacy Policy</a> </div>
+  </div>
+</div>
+<!--[if IE]><div class="w-100 text-center bg-dark text-white pt-3 px-4 pb-1 position-fixed" style="z-index: 1000; bottom: 0;"><p onClick="parentNode.remove()">Please use a modern browser for a better browsing experience. <span class="float-right">X</span></p></div><![endif]--> 
+<script src="https://kit.fontawesome.com/76ef7beb6d.js" crossorigin="anonymous"></script> 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script> 
+<script type="text/javascript">
+  window.onload = function(){
+    setTimeout(function(){
+      document.getElementById("fadein").remove();
+    },1000);
+  };
+  </script> 
+<script type="text/javascript">
+    $(window).on('load', function() {
+      $("#loader-wrapper").fadeOut(700);
+    });
+  </script> 
+<script>
+var container = document.getElementById('leaf-globe-section');
+var windowHeight = container.style.height;
+var windowWidth = container.style.width;
+var scrollArea = 1000 - windowHeight;
+var bfly1 = document.getElementById('leaf-butterfly-1');
+var bfly2 = document.getElementById('leaf-butterfly-2');
+var bfly3 = document.getElementById('leaf-butterfly-3');
+var globe = document.getElementById('leaf-globe');
+		
+window.addEventListener('scroll', function() {
+  var scrollTop = window.pageYOffset || window.scrollTop;
+  var scrollPercent = scrollTop/scrollArea || 0;
+   
+  globe.style.transform = "rotate(" + window.pageYOffset/25 + "deg)";
+
+  bfly1.style.left = 116 + scrollPercent*window.innerWidth * 0.1 + 'px';
+  bfly2.style.left = 945 - scrollPercent*window.innerWidth * 0.1 + 'px';
+  bfly3.style.left = 554 - scrollPercent*window.innerWidth * 0.3 + 'px';
+});
+	</script>
+</body>
+</html>
